@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #313030;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo img {
+  width: 8rem;
+  height: 5rem;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 50%;
+}
+
+main {
+  margin-top: 50rem;
+  padding: 0 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.5rem;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.card {
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 0.5);
+}
+.card:hover {
+  outline: 4px solid #fff;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+}
+.card img:hover {
+  border: 4px solid #fff;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.05);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a9a8a8 #313030;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #a9a8a8 0%,
+    rgba(112, 110, 110, 0.5) 100%
+  );
+  border-radius: 8px;
+}
